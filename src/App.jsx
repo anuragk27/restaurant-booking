@@ -3,7 +3,7 @@ import { useState } from "react";
 import BookingForm from "./Components/BookingForm";
 import AvailabilityDisplay from "./Components/AvailabilityDisplay";
 import BookingSummary from "./Components/BookingSummary";
-import './styles/App.css';
+import './styles/app.css';
 
 function App() {
   const [bookingDetails, setBookingDetails] = useState(null);
