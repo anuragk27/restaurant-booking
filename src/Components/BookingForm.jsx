@@ -48,7 +48,7 @@ const BookingForm = ({ onSubmit }) => {
     }
 
     try {
-      const response = await axios.post("http://localhost:5000/api/bookings", formData);
+      const response = await axios.post("https://table-booking.up.railway.app/", formData);
       alert(response.data.message);
       setFormData({ date: "", time: "", guests: "", name: "", contact: "" }); // Reset form
       onSubmit(formData);
