@@ -9,7 +9,7 @@ const BookingSummary = () => {
   useEffect(() => {
     const fetchBookings = async () => {
       try {
-        const response = await axios.get("http://localhost:5000/api/bookings");
+        const response = await axios.get("https://backend-production-a99b.up.railway.app/bookings");
         setBookings(response.data);
       } catch (err) {
         setError("Failed to fetch bookings. Please try again later.");
