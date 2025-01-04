@@ -48,7 +48,7 @@ const BookingForm = ({ onSubmit }) => {
     }
 
     try {
-      const response = await axios.post("https://backend-production-a99b.up.railway.app/", formData);
+      const response = await axios.post("https://backend-production-a99b.up.railway.app/bookings", formData);
       alert(response.data.message);
       setFormData({ date: "", time: "", guests: "", name: "", contact: "" }); // Reset form
       onSubmit(formData);
